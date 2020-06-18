@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .main-section{
+            text-align: center;
+            width:100vw;
+            background-color: cadetblue;
+            color: ghostwhite;
+        }
+        .nav-link{
+            text-decoration: none;
+            padding:20px;
+            font-size: 200%;
+            list-style: none;
+            color:floralwhite;
+        }
+        #welcome-section{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center; 
+            width:100vw;
+            height:100vh;
+            background-color: darkslategrey;
+        }
+        #welcome-section h1{
+            color:floralwhite;
+            font-size: 500%;
+            font-weight: 800;
+        }
+        #welcome-section p{
+            color:rgb(0, 255, 13);
+            font-size: 200%;
+            font-weight: 800;
+        }
+        #navbar{
+            display:flex;
+            justify-content: flex-end;
+            position: fixed;
+            top:0;
+            height: 70px;
+            background-color: cadetblue;
+            width: 100%; 
+        }
+        .project-grid{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        .project-img{
+            max-height:40vw;
+            max-width:40vw;
+            border-radius: 10%;
+            border: 2px solid;
+        }
+        .project-tile{
+            color:ghostwhite;
+            text-decoration: none;
+        }
+        #projects h1{
+            font-size: 300%;
+        }
+        #projects h3{
+            font-size:200%;
+        }
+        .project-title{
+            font-size: 200%;
+            font-weight: bold;
+            font-family: monospace;
+        }
+        #profile-button{
+            width: 100%;
+            height: 40px;
+            color:ghostwhite;
+            background-color: darkslategrey;
+        }
+        @media(min-width: 768px){
+            .main-section{
+                font-size: 200%;
+            }
+        }
+    
+    </style>
+    <main>
+        <div class=main-section>
+            <div id="welcome-section">
+                <h1> Welcome to my Portfolio</h1>
+                <p> Welcome to my portfolio, my name is Stephen. I currently work in Sales within the Tech industry. I hope to get certified in programming and move to a more technical role.</p>
+            </div>   
+            <div id="projects">
+                <h1>Projects</h1>
+                <h3>Here are my most recent projects</h3>
+                    <div class="project-grid">
+                        <a href="https://codepen.io/stephentynan/pen/oNbYNQv" target="_blank" class="project-tile">
+                            <img class="project-img" src="https://raw.githubusercontent.com/Stephentynan/FCC-Technical-Documentation-Sheet/master/New%20folder/Survey.jpg" alt="FCC: Survey Form">
+                            <p class="project-title"> FCC: Survey Form </p>
+                        </a>
+                        <a href="https://codepen.io/stephentynan/pen/BajQPBB" target="_blank" class="project-tile">
+                            <img class="project-img" src="https://raw.githubusercontent.com/Stephentynan/FCC-Technical-Documentation-Sheet/master/New%20folder/productpage.jpg" alt="FCC: Product Landing Page">
+                            <p class="project-title"> FCC: Product Landing Page </p>
+                        </a>
+                        <a href="https://codepen.io/stephentynan/pen/bGEBGEp" target="_blank" class="project-tile">
+                            <img class="project-img" src="https://raw.githubusercontent.com/Stephentynan/FCC-Technical-Documentation-Sheet/master/New%20folder/Tribute.jpg" alt="FCC: Tribute Page">
+                            <p class="project-title"> FCC: Tribute Page </p>
+                        </a>
+                        <a href="https://codepen.io/stephentynan/pen/oNbYmYe" target="_blank" class="project-tile">
+                            <img class="project-img" src="https://github.com/Stephentynan/FCC-Technical-Documentation-Sheet/blob/master/New%20folder/techdoc.jpg?raw=true" alt="FCC: Technical Documentation">
+                            <p class="project-title"> FCC: Technical Documentation </p>
+                        </a>
+                    </div>
+            </div>
+            <div id="navbar">
+                <a class="nav-link" href="#welcome-section">Welcome</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#profile-link">Profile</a>
+            </div>
+                <a id="profile-link" href="https://codepen.io/stephentynan" target="_blank"><button id="profile-button">
+                More Projects
+                </button></a>    
+        </div>
+
+    </main>
+</html
